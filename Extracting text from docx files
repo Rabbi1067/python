@@ -1,0 +1,13 @@
+#Extracting text from docx files
+
+from docx import Document
+#Before using it, you need to install it in the terminal by typing pip install python-docx.
+
+def extract_text_from_docx(file_path):
+#file_path  means = "C:/Users/FazleRabbi/Documents/sample.docx"
+    doc = Document(file_path) #means doc variable a story korche
+    full_text = []		#empty list
+    for para in doc.paragraphs:
+#adding the para.text of each paragraph to the full_text list
+        full_text.append(para.text)
+    return '\n'.join(full_text)	#all parapraph join kore new line
