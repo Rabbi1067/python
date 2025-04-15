@@ -26,3 +26,15 @@ for i, table in enumerate(tables):
     print(f"\n🔸 Table {i + 1}:\n")
     for row in table:
         print(row)
+"""
+output:
+Table 1
+['                   Content', '                         Page Number']
+['Apache what and why?', '01']
+['What is the prerequisite of Apache?', '01 - 02']
+['In which ports does it run?', '02']
+['Show the current ports in your computer.', '03']
+["How to change the port when Apache doesn't work? How to show another way of ports in apache without xampp?", '03 - 04']
+['Write some other possible applications that occupied the ports of Apache. Show how to implement.', '05 - 09']
+...
+"""
